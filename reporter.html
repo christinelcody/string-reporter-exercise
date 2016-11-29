@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>My String Reporter</title> 
+  </head>
+<body>
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+var word = prompt("Please enter one word with at least 5 characters");
+alert(
+	"You entered: " + word + "\n" +
+	"There are " + word.length + " characters in the word." + "\n" +
+	"The third character is '" + word.charAt(2) + "'" + "\n" +
+	"Lowercase: " + word.toLowerCase() + "\n" +
+	"Uppercase: " + word.toUpperCase() + "\n" +
+	"Example: I have wanted a " + word + " all my life." + "\n" +
+	"Subword: " + word.substring(1,4)
+);
+}
+</script>
+
+</body>
+</html>
